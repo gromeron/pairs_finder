@@ -98,4 +98,5 @@ def pairs_finder_1(arr, sum):
 ```
 
 but in this case the behavior of the algorithm was of O(n^2) due the double `for` expresions into the code.
+
 4. This algorithm fullfil a Big O Complexity of O(n) according with the information found in this [link](https://www.bigocheatsheet.com/).
