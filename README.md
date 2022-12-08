@@ -77,5 +77,7 @@ After the code excecution, you will prompt an input intructions, please follow t
 ## Explanation
 1. Initially we want to find all the pairs into the array where its sum is equal to the given number, this value is taken as the second argument.
 
-2. The algorithm uses just one iteration with one for expression that will look into the array for the value into the key, value in a dictionary data structure, using as a key the index of the array; in this way we could map the solution in a proper way without using a second `for`
+![pair_finder](https://user-images.githubusercontent.com/98790008/206528014-135bd961-d09c-4125-925d-396750de1328.png)
+
+2. The algorithm uses just one iteration with one `for` expression that will look into the array for the value into the key, value in a dictionary data structure, using as a key the index of the array; in this way we could map the solution in a proper way without using a second `for`
 3. This algorithm fullfil a Big O Complexity of O(n) according with the information found in this [link](https://www.bigocheatsheet.com/).
