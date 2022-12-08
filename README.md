@@ -2,9 +2,7 @@
 
 ## Task
 ​
-The task is to write a function that finds pairs of integers from a list that
-sum to a given value. The function will take as input the list of numbers as
-well as the target sum.
+The task is to write a function that finds pairs of integers from a list that sum to a given value. The function will take as input the list of numbers as well as the target sum.
 ​
 Sample output is shown below.
 ```
@@ -48,13 +46,15 @@ python app.py
 ## Istallation - windows
 1. Ensure you have python installed on your system
 
-2. Download the code
+2. Download the code from the zip file
 
 ```bash
-git clone https://github.com/gromeron/pairs_finder.git
+https://github.com/gromeron/pairs_finder/archive/refs/heads/main.zip
 ```
 
-2. Get into de directory
+3. Extract the code into de folder
+
+4. Get into de folder
 
 ```bash
 cd pairs_finder
@@ -65,3 +65,17 @@ cd pairs_finder
 ```bash
 python app.py
 ```
+
+## Using the code
+After the code excecution, you will prompt an input intructions, please follow them to test the algorithm
+
+1. Enter the items of the array separate by commas
+2. Enter the value of the two integers from the array to be added
+3. Finally you could see all the combinations in the array
+
+
+## Explanation
+1. Initially we want to find all the pairs into the array where its sum is equal to the given number, this value is taken as the second argument.
+
+2. The algorithm uses just one iteration with one for expression that will look into the array for the value into the key, value in a dictionary data structure, using as a key the index of the array; in this way we could map the solution in a proper way without using a second `for`
+3. This algorithm fullfil a Big O Complexity of O(n) according with the information found in this [link](https://www.bigocheatsheet.com/).
