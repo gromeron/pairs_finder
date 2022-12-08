@@ -71,7 +71,7 @@ After the code excecution, you will prompt an input intructions, please follow t
 
 1. Enter the items of the array separate by commas
 2. Enter the value of the two integers from the array to be added
-3. Finally you could see all the combinations in the array
+3. Finally you could see all the possible combinations that fulfill the sum condition in the array
 
 
 ## Explanation
