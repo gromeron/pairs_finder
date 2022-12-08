@@ -24,5 +24,5 @@ if __name__ == '__main__':
 
     result = pairs_finder(arr, sum)
 
-    print(f'the solution 1 is: {result}')
+    print(f'the solution is: {result}')
     show_results(result)
