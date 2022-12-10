@@ -2,13 +2,15 @@
 
 def pairs_finder(arr, sum):
 
-    s1 = arr
+    s1 = {}
     s2 = {}
 
-    for i, v in enumerate(s1):
+    for i, v in enumerate(arr):
         diff = sum - v
+        s1[v] = diff
         if diff in s1:
             s2[v] = diff
+
     return s2
 
 def show_results(s2):

@@ -99,3 +99,81 @@ def pairs_finder_1(arr, sum):
 
 but in this case the behavior of the algorithm was of O(n^2) due the double `for` expresions into the code.
 4. This algorithm fullfil a Big O Complexity of O(n) according with the information found in this [link](https://www.bigocheatsheet.com/).
+
+## Addendum
+There is another way to inprove the algorithm and is this version
+
+```py
+def pairs_finder(arr, sum):
+
+    s1 = {}
+    s2 = {}
+
+    for i, v in enumerate(arr):
+        diff = sum - v
+        s1[v] = diff
+        if diff in s1:
+            s2[v] = diff
+
+    return s2
+```
+
+With this one we could get and speed improve, following the results comparing the three functions
+
+Function | CPU times [μs] | per loop (mean[μs] ± std. dev.[ns] of 7 runs, 100000 loops each)
+---|---|---
+1 | 26 | 12.5 ± 3.87
+2 | 9 | 2.35 ± 74.8
+3 | 8 | 2.09 ± 109
+
+### Results
+
+Al the three functions were tested using `%time` and `timeit` methods into a colab python workbook.
+
+### Function 1
+```py
+def pairs_finder_1(arr, sum):
+    
+    s1 = arr
+    s2 = []
+
+    for i in range(0,len(s1)):
+        for j in range(1,len(s1)-1):
+            if(s1[i] + s1[j]) == sum:
+                s2.append(s1[i])
+                s2.append(s1[j])
+
+    return s2
+```
+
+### Function 2
+
+```py
+def pairs_finder_2(arr, sum):
+
+    s1 = {}
+
+    for i, v in enumerate(arr):
+        diff = sum - v
+        if diff in arr:
+            s1[v] = diff
+    return s1
+```
+
+### Function 3
+
+def pairs_finder(arr, sum):
+
+    s1 = {}
+    s2 = {}
+
+    for i, v in enumerate(arr):
+        diff = sum - v
+        s1[v] = diff
+        if diff in s1:
+            s2[v] = diff
+
+    return s2
+
+## Conclusion
+The best result was obtained with the third function, using only one 'for' statement and one `if` also, to search in a hash mapped structure.
