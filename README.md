@@ -185,4 +185,4 @@ def pairs_finder(arr, sum):
 ![Screenshot from 2022-12-09 21-54-35](https://user-images.githubusercontent.com/98790008/206826948-a1b516c4-168e-4c1b-8c57-a731d3e8b210.png)
 
 ## Conclusion
-The best result was obtained with the third function, using only one 'for' statement and one `if` also, to search in a hash mapped structure.
+The best result was obtained with the third function, using only one `for` statement and one `if` also, to search in a hash mapped structure.
